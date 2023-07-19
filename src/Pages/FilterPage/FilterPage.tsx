@@ -18,6 +18,7 @@ const FilterPage = () => {
         <div>
             {controlsArray.map((control) => (
                 <InputControl
+                    key={control.id}
                     controlInfo={control}
                     isTooltipVisible={isTooltipVisible}
                     selectedControlId={selectedControlId}
